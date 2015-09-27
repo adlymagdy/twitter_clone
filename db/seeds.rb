@@ -5,6 +5,15 @@ User.create!(name: "Adly Magdy",
              admin: true,
              activated: true,
              activated_at: Time.zone.now)
+             
+
+User.create!(name: "Maged Ishak",
+             email: "maged0ishak@yahoo.com",
+             password:              "123456",
+             password_confirmation: "123456",
+             admin: false,
+             activated: true,
+             activated_at: Time.zone.now)
 99.times do |n|
   name =  Faker::Name.name
   email = "example-#{n+1}@example.com"
